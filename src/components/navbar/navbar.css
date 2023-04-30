@@ -1,0 +1,105 @@
+.app-navbar-links {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+.app-navbar-img img  {
+    width: 150px;
+}
+.app-navbar-section {
+    flex: 1;
+    margin-left: 50px;
+}
+li {
+    display: inline;
+    margin: 1rem 1rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'kalam';
+}
+
+.sans:hover {
+    transition: 0.4s ease-in;
+    color: grey;
+}
+.app-navbar-login {
+    flex: 1;
+    margin-left: 35px;
+}
+.app-navbar-login a {
+  
+    margin: 0 0.75rem;
+}
+.app-navbar-login a:hover {
+    color: goldenrod;
+    transition: 0.5s ease-out;
+}
+.app-navbar-open {
+    visibility:hidden;
+}
+
+
+@media  screen and (max-width:980px) {
+    .app-navbar-section {
+        display: none;
+    }
+    .app-navbar-open {
+        visibility:visible;
+    }
+    .app-navbar-login {
+        margin-left: 25%;
+    }
+    .app-navbar-login a {
+        font-size: 14px;
+    }
+    .app-navbar-img img  {
+        width: 100px;
+    }
+    .app-navbar-mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+         height: 100vh;
+         background-color: black;
+         transition: 0.5Ss ease;
+         z-index: 5;
+    }
+    .close-menu {
+        position:absolute;
+        top: 20px;
+        color: goldenrod;
+        right: 20px;
+    }
+    .sans-mobile {
+        display: block;
+       padding: 5px;
+        text-align: center;
+    }
+    .sans-mobile:hover {
+        color: goldenrod;
+       
+    }
+    
+}
+@media screen and (max-width:620px) {
+    .app-navbar-login {
+        display: none;
+    }
+    .app-navbar-links {
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:290px) {
+    .app-navbar-links {
+        justify-content: space-between;
+        gap: 4rem;
+    }
+    .app-navbar-img img  {
+        width: 80px;
+    }
+}

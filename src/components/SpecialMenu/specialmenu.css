@@ -1,0 +1,102 @@
+.app-specialmenu {
+  text-align: center;
+  padding: 1rem 0;
+}
+.app-main-specialmenu {
+  background-color: black;
+}
+.app-specialmenu h3 {
+  font-family: "satisfy";
+  font-size: 15px;
+  color: white;
+}
+.app-specialmenu h2 {
+  font-family: "Kalam";
+  color: rgb(228, 198, 120);
+  padding: 0.75rem 0;
+  font-size: 40px;
+}
+.app-specialmenu-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 3rem;
+}
+.app-specialmenu-img img {
+  height: 520px;
+  padding: 0 2rem;
+}
+.app-specialmenu-cocktails,
+.app-specialmenu-wine {
+  flex: 1;
+}
+.app-specialmenu-cocktails section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app-specialmenu-wine section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-specialmenu-wine h4 {
+  color: white;
+  font-family: "Kalam";
+  font-size: 27px;
+  padding-bottom: 0.75rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.app-specialmenu-wine h5 {
+  color: rgb(228, 198, 120);
+  letter-spacing: 2px;
+  font-size: 15px;
+  padding: 1rem 0;
+  font-family: 'Kalam';
+}
+.app-specialmenu-cocktails,.app-specialmenu-wine p {
+  color: white;
+  /* font-size: 13px; */
+  font-family: 'Kalam';
+  font-size: 15px;
+
+}
+.app-specialmenu-cocktails h5 {
+  color: rgb(228, 198, 120);
+  letter-spacing: 2px;
+  font-size: 15px;
+  padding: 1rem 0;
+  font-family: 'Kalam';
+}
+.app-specialmenu-cocktails h4 {
+  color: white;
+  font-family: "Kalam";
+  font-size: 27px;
+  padding-bottom: 0.75rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+@media screen and (max-width:550px) {
+  .app-specialmenu-content {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  .app-specialmenu-img img {
+    height: 420px ;
+    padding: 3rem 0;
+  }
+  .app-specialmenu-wine,.app-specialmenu-cocktails {
+    width: 100%;
+    margin: 1rem 2rem;
+  }
+}
+@media screen and (max-width:290px) {
+    .app-specialmenu-img img {
+      height: 320px;
+    }
+}

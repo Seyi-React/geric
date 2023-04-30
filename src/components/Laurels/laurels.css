@@ -1,0 +1,82 @@
+.laurel-img {
+  height: 500px;
+  width: 380px;
+}
+.app-laurel {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: black;
+}
+.app-laurel-content {
+  padding: 4rem 2rem;
+}
+.app-laurel-child img {
+  height: 70px;
+  width: 70px;
+  padding: 0.75rem;
+}
+.app-laurel-child h3 {
+  color: rgb(228, 198, 120);
+  font-family: "kalam";
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.app-laurel-child p {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 13px;
+}
+section h4 {
+    color: white;
+    font-family: 'kalam';
+    font-size: 16px;
+}
+section h2 {
+    color: rgb(228, 198, 120);
+    padding-bottom: 2rem;
+    font-family: 'kalam';
+    font-size: 45px;
+}
+.app-laurel-flex {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+
+@media screen and (max-width:700px) {
+    .app-laurel{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .app-laurel-flex {
+        padding: 1rem 1rem;
+    }
+    .laurel-img {
+        height: 400px;
+        width: 280px;
+      }
+      .app-laurel-flex {
+        grid-template-columns: repeat(1,1fr);
+    
+      }
+    
+}
+@media screen and (max-width:290px) {
+    .laurel-img {
+        height: 300px;
+        width: 180px;
+      }
+      section h2 {
+        font-size: 25px;
+        margin-left: 10px;
+      }
+      section h4 {
+        margin-left: 10px;
+      }
+   
+}
